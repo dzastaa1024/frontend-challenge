@@ -1,3 +1,68 @@
+
+## Installation
+
+Install all dependencies using:
+```bash
+npm install
+```
+Run the application using: 
+```bash
+npm run start
+```
+
+## Layout
+
+Applications were a great opportunity to learn more about React. I really liked the project structure and styled-components.
+
+
+First of all, I created a fork from your repository. Then I got to know the structure of the project. I have read the API documentation.
+
+I used Fetch in order to get data from API. In keep data in the App component. Function Search is invoked every time when the onChange event happens.
+
+![image](https://user-images.githubusercontent.com/47246412/77062598-184e7680-69d4-11ea-8a1c-c9d1db70d9e3.png)
+
+The whole application is divided into Sidebar and the component returned by rooting.
+
+![image](https://user-images.githubusercontent.com/47246412/77062608-1edcee00-69d4-11ea-940a-de2e79d1c26b.png)
+
+The Discover component is divided into two parts. The first part is responsible for displaying movies, the second has search sections and filters section. 
+
+![image](https://user-images.githubusercontent.com/47246412/77062625-27352900-69d4-11ea-874a-d8b0b485ba66.png)
+
+The search section is divided into two parts as well. The first contains two inputs- first is using for a name, and second (optional) is a year of release. 
+
+![image](https://user-images.githubusercontent.com/47246412/77062640-2dc3a080-69d4-11ea-99fd-94dca9127329.png)
+
+
+
+The list of filters is expandable but the logic responsible for a filter is not implemented.
+
+![image](https://user-images.githubusercontent.com/47246412/77062657-35834500-69d4-11ea-8286-b7549f830fd0.png)
+
+
+## Key Functionality 
+
+Movies are store in the State of the discover component. After that, they are passed by props to the Movielist component - which passes a single movie to the Movieitem component.
+
+9d61-f65adfa88ebe.png)
+
+Movieitem is clickable, click on a single movie card displays a modal - that displays all the details about the movie.
+
+![image](https://user-images.githubusercontent.com/47246412/77062682-4338ca80-69d4-11ea-8093-60b59d997f88.png)
+
+
+All components are styled using styled-components.
+
+![image](https://user-images.githubusercontent.com/47246412/77062698-4b910580-69d4-11ea-9c4c-e5f90605d8a6.png)
+
+
+
+
+
+
+
+
+
 # Cohire Coding Challenge (Frontend)
 
 ### Introduction 
