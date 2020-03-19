@@ -44,7 +44,7 @@ The list of filters is expandable but the logic responsible for a filter is not 
 
 Movies are store in the State of the discover component. After that, they are passed by props to the Movielist component - which passes a single movie to the Movieitem component.
 
-9d61-f65adfa88ebe.png)
+
 
 Movieitem is clickable, click on a single movie card displays a modal - that displays all the details about the movie.
 
