@@ -1,35 +1,38 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import styled from 'styled-components';
-
+import styled, { css } from "styled-components";
 import SideNavBar from "./components/sidenavbar";
-
 import Discover from "./pages/discover";
-
-import './css/app.css'; 
+import "./css/app.css";
+import GlobalStyle from "./GlobalStyle";
 
 export default class App extends React.Component {
-  render () {
+  render() {
     return (
       <Router>
-        <PageContainer>
-          <SideNavBar {...this.props} />
-          <ContentWrapper>
-            <Switch>
-              <Route path="/discover" component={Discover} {...this.props}/>
-            </Switch>
-          </ContentWrapper>
-        </PageContainer>
+        <>
+          <GlobalStyle />
+          <PageContainer>
+            {/* to jest na dole zdefiniowane , skoro nie ma tego w imporcie- i sa to style*/}
+            <SideNavBar {...this.props} /> {/*najprawd. prospry od rutera*/}
+            <ContentWrapper>
+              <Switch>
+                <Route path="/discover" component={Discover} {...this.props} />
+              </Switch>
+            </ContentWrapper>
+          </PageContainer>
+        </>
       </Router>
     );
   }
 }
 
-
 const ContentWrapper = styled.main`
-  padding-left: 280px;
-`
+  @media (min-width: 900px) {
+    padding-left: 26rem;
+  }
+`;
 
 const PageContainer = styled.main`
-  overflow-x: hidden;
-`
+  §overflow-x: hidden;
+`;
